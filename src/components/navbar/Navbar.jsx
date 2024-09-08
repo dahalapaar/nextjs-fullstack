@@ -2,6 +2,7 @@
 import Link from "next/link"
 import React from "react"
 import styles from "./navbar.module.css"
+import DarkModeToofle from "../darkmode/DarkModeToofle"
 
 const links = [
   {
@@ -43,6 +44,7 @@ const Navbar = () => {
         Apaar
       </Link>
       <div className={styles.links}>
+        <DarkModeToofle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
